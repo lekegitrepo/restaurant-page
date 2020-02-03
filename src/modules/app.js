@@ -1,5 +1,8 @@
 // import image from '../../images/image-1.png';
 import {menu} from './components/menu.js';
+import {SpecialMenu} from './components/menu.js';
+import {Contact} from './components/menu.js';
+import {About} from './components/menu.js';
 
 const mImage = menu.getImage();
 const content = document.createElement('div');
