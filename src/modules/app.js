@@ -1,4 +1,7 @@
-import image from '../../images/image-1.png';
+// import image from '../../images/image-1.png';
+import {menu} from './components/menu.js';
+
+const mImage = menu.getImage();
 const content = document.createElement('div');
 
 const navbar = document.createElement('div');
@@ -58,4 +61,4 @@ navbar.appendChild(nav_menu);
 
 content.appendChild(navbar)
 
-export {content, image};
+export {content, mImage};

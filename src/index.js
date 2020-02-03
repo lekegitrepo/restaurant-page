@@ -1,6 +1,6 @@
 import 'bootstrap';
 import './scss/app.scss';
-import {content, image} from './modules/app.js';
+import {content, mImage} from './modules/app.js';
 
 const mainContent = document.getElementById('content');
 
@@ -22,12 +22,9 @@ row.appendChild(descrip);
 
 const conten_img = document.createElement('img');
 conten_img.className = 'col-8';
-conten_img.src = image;
+conten_img.src = mImage;
 row.appendChild(conten_img);
 
 container.appendChild(row);
 
 content.appendChild(container);
-
-
-console.log('restaurant page use webpack');
