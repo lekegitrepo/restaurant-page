@@ -1,4 +1,5 @@
-const content = document.getElementById('content');
+import image from '../../images/image-1.png';
+const content = document.createElement('div');
 
 const navbar = document.createElement('div');
 navbar.className = 'navbar navbar-expand-lg bg-dark fixed-top';
@@ -7,6 +8,7 @@ navbar.className = 'navbar navbar-expand-lg bg-dark fixed-top';
 const brand = document.createElement('a');
 brand.className = 'navbar-brand';
 brand.textContent = 'Brand';
+brand.setAttribute('id', 'brand');
 navbar.appendChild(brand);
 
 const nav_menu = document.createElement('ul');
@@ -22,6 +24,7 @@ li_menu_a.textContent = 'Menu';
 li_menu.appendChild(li_menu_a);
 nav_menu.appendChild(li_menu);
 
+//special menu tab
 const li_special= document.createElement('li');
 li_special.className = 'nav-item';
 const li_special_a = document.createElement('a');
@@ -31,6 +34,7 @@ li_special_a.textContent = 'Special menu';
 li_special.appendChild(li_special_a);
 nav_menu.appendChild(li_special);
 
+//contact tab
 const li_contact = document.createElement('li');
 li_contact.className = 'nav-item';
 const li_contact_a = document.createElement('a');
@@ -40,6 +44,7 @@ li_contact_a.textContent = 'Contact';
 li_contact.appendChild(li_contact_a);
 nav_menu.appendChild(li_contact);
 
+//about tab
 const li_about = document.createElement('li');
 li_about.className = 'nav-item';
 const li_about_a = document.createElement('a');
@@ -52,3 +57,5 @@ nav_menu.appendChild(li_about);
 navbar.appendChild(nav_menu);
 
 content.appendChild(navbar)
+
+export {content, image};
