@@ -1,5 +1,5 @@
 import image from '../../../images/image-2.jpeg';
-const menu = (() => {
+const Menu = (() => {
   const getName = () => {
     return 'Menu';
   }
@@ -15,4 +15,4 @@ const menu = (() => {
   return {getName, getDescription, getImage}
 })();
 
-export {menu};
+export {Menu};

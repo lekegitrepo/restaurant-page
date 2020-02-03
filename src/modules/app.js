@@ -1,10 +1,10 @@
 // import image from '../../images/image-1.png';
-import {menu} from './components/menu.js';
-import {SpecialMenu} from './components/menu.js';
-import {Contact} from './components/menu.js';
-import {About} from './components/menu.js';
+import {Menu} from './components/menu.js';
+import {SpecialMenu} from './components/special_menu.js';
+import {Contact} from './components/contact.js';
+import {About} from './components/about.js';
 
-const mImage = menu.getImage();
+const mImage = Menu.getImage();
 const content = document.createElement('div');
 
 const navbar = document.createElement('div');
@@ -26,7 +26,7 @@ li_menu.className = 'nav-item';
 const li_menu_a = document.createElement('a');
 li_menu_a.className = 'nav-link';
 li_menu_a.setAttribute('href', '#');
-li_menu_a.textContent = 'Menu';
+li_menu_a.textContent = Menu.getName();
 li_menu.appendChild(li_menu_a);
 nav_menu.appendChild(li_menu);
 
@@ -36,7 +36,7 @@ li_special.className = 'nav-item';
 const li_special_a = document.createElement('a');
 li_special_a.className = 'nav-link';
 li_special_a.setAttribute('href', '#');
-li_special_a.textContent = 'Special menu';
+li_special_a.textContent = SpecialMenu.getName();
 li_special.appendChild(li_special_a);
 nav_menu.appendChild(li_special);
 
@@ -46,7 +46,7 @@ li_contact.className = 'nav-item';
 const li_contact_a = document.createElement('a');
 li_contact_a.className = 'nav-link';
 li_contact_a.setAttribute('href', '#');
-li_contact_a.textContent = 'Contact';
+li_contact_a.textContent = Contact.getName();
 li_contact.appendChild(li_contact_a);
 nav_menu.appendChild(li_contact);
 
@@ -56,7 +56,7 @@ li_about.className = 'nav-item';
 const li_about_a = document.createElement('a');
 li_about_a.className = 'nav-link';
 li_about_a.setAttribute('href', '#');
-li_about_a.textContent = 'About';
+li_about_a.textContent = About.getName();
 li_about.appendChild(li_about_a);
 nav_menu.appendChild(li_about);
 

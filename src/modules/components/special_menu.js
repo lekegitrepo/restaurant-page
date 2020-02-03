@@ -1,7 +1,7 @@
 import image from '../../../images/image-1.png';
 const SpecialMenu = (() => {
   const getName = () => {
-    return 'Menu';
+    return 'Special menu';
   }
 
   const getDescription = () => {

@@ -1,7 +1,7 @@
 import image from '../../../images/image-4.png';
 const Contact = (() => {
   const getName = () => {
-    return 'Menu';
+    return 'Contact';
   }
 
   const getDescription = () => {
