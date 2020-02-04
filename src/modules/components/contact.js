@@ -3,8 +3,7 @@ import image from '../../../images/image-7.png';
 const Contact = (() => {
   const getName = () => 'Contact';
 
-  const getDescription = () => {
-    return `<div class="form_main">
+  const getDescription = () => `<div class="form_main">
                 <h4 class="heading"><strong>Quick </strong> Contact <span></span></h4>
                 <div class="form">
                 <form action="contact_send_mail.php" method="post" id="contactFrm" name="contactFrm">
@@ -17,11 +16,8 @@ const Contact = (() => {
                 </form>
             </div>
             </div>`;
-  };
 
-  const getImage = () => {
-    return image.toString();
-  };
+  const getImage = () => image.toString();
 
   return { getName, getDescription, getImage };
 })();
