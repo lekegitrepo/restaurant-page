@@ -4,6 +4,8 @@
 
 a {
   color: #fff !important;
+  font-family: 'Odibee Sans', cursive;
+  font-size: 24px;
   padding: 8px;
 }
 
@@ -14,14 +16,16 @@ a:hover {
   cursor: pointer;
 }
 
-a:focus {
-  border-bottom: 2px solid #c73232;
-}
-
 .navbar {
   padding-bottom: 0px;
 }
 
+.navbar-brand {
+  font-family: 'Odibee Sans', cursive;
+  font-size: 28px;
+}
+
 .container {
-  margin-top: 5%;
+  margin-top: 8%;
+  width: 55%;
 }

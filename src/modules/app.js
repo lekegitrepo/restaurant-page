@@ -17,7 +17,7 @@ function setAttributes(el, attrs) {
 //brand
 const brand = document.createElement('a');
 brand.className = 'navbar-brand';
-brand.textContent = 'Brand';
+brand.textContent = "Noodle's Palace";
 setAttributes(brand, { id: 'brand',  data_image: image.toString(),
               data_description: 'This is a good restaurant'});
 navbar.appendChild(brand);
