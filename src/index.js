@@ -44,7 +44,7 @@ nav_menu.addEventListener('click', (e) => {
 
 function load (){
   console.log('onload is working!')
-  descrip.textContent = brand.getAttribute('data_description')
+  descrip.innerHTML = brand.getAttribute('data_description')
   conten_img.src = brand.getAttribute('data_image')
   linkTags(brand);
 }

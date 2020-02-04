@@ -19,7 +19,7 @@ const brand = document.createElement('a');
 brand.className = 'navbar-brand';
 brand.textContent = HomePage.getName();
 setAttributes(brand, { id: 'brand',  data_image: HomePage.getImage(),
-              data_description: 'This is a good restaurant'});
+              data_description: `${HomePage.getDescription()}`});
 navbar.appendChild(brand);
 
 const nav_menu = document.createElement('ul');
