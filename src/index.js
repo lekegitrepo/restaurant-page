@@ -28,9 +28,9 @@ content.appendChild(container);
 
 function linkTags(currElem) {
   const a = document.querySelectorAll('.navbar a');
-  [...a].map(el => { if (el.hasAttribute('style')) { el.setAttribute('style', ''); } });
+  [...a].map(function(el) { if (el.hasAttribute('style')) { el.setAttribute('style', ''); } });
   currElem.setAttribute('style', 'border-bottom: 2px solid #c73232; background-color: #343a40 !important; border-radius: 20% 0px 0px;');
-};
+}
 
 navMenu.addEventListener('click', (e) => {
   const elem = e.target;
@@ -49,4 +49,3 @@ function load() {
 
 brand.onload = load();
 brand.addEventListener('click', load);
-
