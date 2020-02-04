@@ -11,7 +11,7 @@ const nav_menu = document.getElementById('nav_menu');
 
 //container for display each tab content.
 const container = document.createElement('div');
-container.className = 'container mt-5';
+container.className = 'container';
 
 const row = document.createElement('div');
 row.className = 'row';
@@ -28,21 +28,30 @@ container.appendChild(row);
 
 content.appendChild(container);
 
+const linkTags = () => {
+  const a = document.querySelectorAll('.navbar a');
+  return a[0].setAttribute('style', 'border-bottom: 2px solid #c73232;');
+}
+console.log(linkTags.length);
+
 nav_menu.addEventListener('click', (e) => {
   const elem = e.target
   console.log(elem.getAttribute('data_description'))
   descrip.textContent = elem.getAttribute('data_description')
   conten_img.src = elem.getAttribute('data_image')
+  elem.setAttribute('style', 'border-bottom: 2px solid #c73232;');
+  console.log(linkTags())
 });
 
 function load (){
   console.log('onload is working!')
   descrip.textContent = brand.getAttribute('data_description')
   conten_img.src = brand.getAttribute('data_image')
+  //brand.style.borderBottom = '3px solid #fff';
+  linkTags();
 }
 
 const brand = document.getElementById('brand');
 if (brand) { console.log('brand is loaded')}
-brand.style.color = 'white';
 brand.onload = load();
 brand.addEventListener('click', load);

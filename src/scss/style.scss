@@ -1,0 +1,27 @@
+.bg-dark {
+  background-color: #1b1f23 !important;
+}
+
+a {
+  color: #fff !important;
+  padding: 8px;
+}
+
+a:hover {
+  background-color: #343a40 !important;
+  border-radius: 20% 0px 0px;
+  color: #eae1e1 !important;
+  cursor: pointer;
+}
+
+a:focus {
+  border-bottom: 2px solid #c73232;
+}
+
+.navbar {
+  padding-bottom: 0px;
+}
+
+.container {
+  margin-top: 5%;
+}
