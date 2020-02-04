@@ -34,7 +34,7 @@ DOM manipulation - dynamically rendering a simple restaurant homepage! By the en
 
 Contributions, issues and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/lekegitrepo/Tic-Tac-Toe/issues).
+Feel free to check the [issues page](https://github.com/lekegitrepo/restaurant-page/issues).
 
 ## Show your support
 
