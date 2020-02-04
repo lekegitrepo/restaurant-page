@@ -14,7 +14,7 @@ const HomePage = (() => {
     return image.toString();
   }
 
-  return {getName, getDescription, getImage}
+  return { getName, getDescription, getImage }
 })();
 
-export {HomePage};
+export { HomePage };

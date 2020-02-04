@@ -5,13 +5,13 @@ const Menu = (() => {
 
   const getDescription = () => {
     return '<h4>Lists of available foods</h4>';
-  }
+  };
 
   const getImage = () => {
     return image.toString();
-  }
+  };
 
-  return {getName, getDescription, getImage}
+  return { getName, getDescription, getImage }
 })();
 
 export { Menu };

@@ -5,13 +5,13 @@ const SpecialMenu = (() => {
 
   const getDescription = () => {
     return '<h4>This is one of our popular and best dishes</h4>';
-  }
+  };
 
   const getImage = () => {
     return image.toString();
-  }
+  };
 
-  return {getName, getDescription, getImage}
+  return { getName, getDescription, getImage }
 })();
 
-export {SpecialMenu};
+export { SpecialMenu };

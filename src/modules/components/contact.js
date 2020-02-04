@@ -17,13 +17,13 @@ const Contact = (() => {
                 </form>
             </div>
             </div>`;
-  }
+  };
 
   const getImage = () => {
     return image.toString();
-  }
+  };
 
   return { getName, getDescription, getImage }
 })();
 
-export {Contact};
+export { Contact };

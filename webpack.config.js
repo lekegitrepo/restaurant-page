@@ -29,7 +29,7 @@ module.exports = {
         use: [
           'style-loader',
           'css-loader'
-        ]
+        ],
       },
       {
         test: /\.(scss)$/,
@@ -41,19 +41,12 @@ module.exports = {
             loader: 'css-loader'
           },
           {
-            loader: 'postcss-loader',
-            options: {
-              plugins: function () {
-                return [
-                  require('autoprefixer')
-                ];
-              }
-            }
+            loader: 'postcss-loader'
           },
           {
             loader: 'sass-loader'
-          }
-        ]
+          },
+        ],
       },
     ],
   },
