@@ -28,27 +28,25 @@ container.appendChild(row);
 
 content.appendChild(container);
 
-const linkTags = () => {
+const linkTags = (currElem) => {
   const a = document.querySelectorAll('.navbar a');
-  return a[0].setAttribute('style', 'border-bottom: 2px solid #c73232;');
+  const att = [...a].map(el => {if (el.hasAttribute('style')) {el.setAttribute('style', '')}})
+  currElem.setAttribute('style', 'border-bottom: 2px solid #c73232; background-color: #343a40 !important; border-radius: 20% 0px 0px;');
 }
-console.log(linkTags.length);
 
 nav_menu.addEventListener('click', (e) => {
   const elem = e.target
   console.log(elem.getAttribute('data_description'))
   descrip.textContent = elem.getAttribute('data_description')
   conten_img.src = elem.getAttribute('data_image')
-  elem.setAttribute('style', 'border-bottom: 2px solid #c73232;');
-  console.log(linkTags())
+  linkTags(elem)
 });
 
 function load (){
   console.log('onload is working!')
   descrip.textContent = brand.getAttribute('data_description')
   conten_img.src = brand.getAttribute('data_image')
-  //brand.style.borderBottom = '3px solid #fff';
-  linkTags();
+  linkTags(brand);
 }
 
 const brand = document.getElementById('brand');
