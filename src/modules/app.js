@@ -1,10 +1,9 @@
-import { HomePage } from './components/homepage.js';
-import { Menu } from './components/menu.js';
-import { SpecialMenu } from './components/special_menu.js';
-import { Contact } from './components/contact.js';
-import { About } from './components/about.js';
+import { HomePage } from './components/homepage';
+import { Menu } from './components/menu';
+import { SpecialMenu } from './components/special_menu';
+import { Contact } from './components/contact';
+import { About } from './components/about';
 
-const mImage = Menu.getImage();
 const content = document.createElement('div');
 
 const navbar = document.createElement('div');
@@ -21,65 +20,65 @@ brand.textContent = HomePage.getName();
 setAttributes(brand, {
   id: 'brand',
   data_image: HomePage.getImage(),
-  data_description: `${HomePage.getDescription()}`,
+  data_description: HomePage.getDescription(),
 });
 navbar.appendChild(brand);
 
-const nav_menu = document.createElement('ul');
-nav_menu.className = 'navbar-nav ml-auto';
-nav_menu.setAttribute('id', 'nav_menu');
+const navMenu = document.createElement('ul');
+navMenu.className = 'navbar-nav ml-auto';
+navMenu.setAttribute('id', 'nav_menu');
 
 // menu tab
-const li_menu = document.createElement('li');
-li_menu.className = 'nav-item';
-const li_menu_a = document.createElement('a');
-setAttributes(li_menu_a, { data_image: Menu.getImage(), data_description: Menu.getDescription() });
-li_menu_a.className = 'nav-link';
-li_menu_a.textContent = Menu.getName();
-li_menu.appendChild(li_menu_a);
+const liMenu = document.createElement('li');
+liMenu.className = 'nav-item';
+const liMenuLink = document.createElement('a');
+setAttributes(liMenuLink, { data_image: Menu.getImage(), data_description: Menu.getDescription() });
+liMenuLink.className = 'nav-link';
+liMenuLink.textContent = Menu.getName();
+liMenu.appendChild(liMenuLink);
 
-nav_menu.appendChild(li_menu);
+navMenu.appendChild(liMenu);
 
 // special menu tab
-const li_special = document.createElement('li');
-li_special.className = 'nav-item';
-const li_special_a = document.createElement('a');
-li_special_a.className = 'nav-link';
-li_special_a.textContent = SpecialMenu.getName();
-li_special.appendChild(li_special_a);
+const liSpecial = document.createElement('li');
+liSpecial.className = 'nav-item';
+const liSpecialLink = document.createElement('a');
+liSpecialLink.className = 'nav-link';
+liSpecialLink.textContent = SpecialMenu.getName();
+liSpecial.appendChild(liSpecialLink);
 
-setAttributes(li_special_a, { data_image: SpecialMenu.getImage(), data_description: SpecialMenu.getDescription() });
+setAttributes(liSpecialLink, { data_image: SpecialMenu.getImage(), data_description: SpecialMenu.getDescription() });
 
-nav_menu.appendChild(li_special);
+navMenu.appendChild(liSpecial);
 
 // contact tab
-const li_contact = document.createElement('li');
-li_contact.className = 'nav-item';
-const li_contact_a = document.createElement('a');
-li_contact_a.className = 'nav-link';
-li_contact_a.textContent = Contact.getName();
-li_contact.appendChild(li_contact_a);
+const liContact = document.createElement('li');
+liContact.className = 'nav-item';
+const liContactLink = document.createElement('a');
+liContactLink.className = 'nav-link';
+liContactLink.textContent = Contact.getName();
+liContact.appendChild(liContactLink);
 
-setAttributes(li_contact_a, { data_image: Contact.getImage(), data_description: Contact.getDescription() });
+setAttributes(liContactLink, { data_image: Contact.getImage(), data_description: Contact.getDescription() });
 
-nav_menu.appendChild(li_contact);
+navMenu.appendChild(liContact);
 
 // about tab
-const li_about = document.createElement('li');
-li_about.className = 'nav-item';
-const li_about_a = document.createElement('a');
-li_about_a.className = 'nav-link';
-li_about_a.textContent = About.getName();
-li_about.appendChild(li_about_a);
+const liAbout = document.createElement('li');
+liAbout.className = 'nav-item';
+const liAboutLink = document.createElement('a');
+liAboutLink.className = 'nav-link';
+liAboutLink.textContent = About.getName();
+liAbout.appendChild(liAboutLink);
 
-setAttributes(li_about_a, {
+setAttributes(liAboutLink, {
   data_image: About.getImage(),
   data_description: About.getDescription(),
 });
 
-nav_menu.appendChild(li_about);
+navMenu.appendChild(liAbout);
 
-navbar.appendChild(nav_menu);
+navbar.appendChild(navMenu);
 
 content.appendChild(navbar);
 
