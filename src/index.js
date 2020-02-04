@@ -7,7 +7,6 @@ mainContent.appendChild(content);
 
 const navMenu = document.getElementById('nav_menu');
 
-// container for display each tab content.
 const container = document.createElement('div');
 container.className = 'container';
 

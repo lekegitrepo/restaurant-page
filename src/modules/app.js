@@ -13,7 +13,6 @@ function setAttributes(el, attrs) {
   Object.keys(attrs).forEach(key => el.setAttribute(key, attrs[key]));
 }
 
-// brand
 const brand = document.createElement('a');
 brand.className = 'navbar-brand';
 brand.textContent = HomePage.getName();
@@ -28,7 +27,6 @@ const navMenu = document.createElement('ul');
 navMenu.className = 'navbar-nav ml-auto';
 navMenu.setAttribute('id', 'nav_menu');
 
-// menu tab
 const liMenu = document.createElement('li');
 liMenu.className = 'nav-item';
 const liMenuLink = document.createElement('a');
@@ -39,7 +37,6 @@ liMenu.appendChild(liMenuLink);
 
 navMenu.appendChild(liMenu);
 
-// special menu tab
 const liSpecial = document.createElement('li');
 liSpecial.className = 'nav-item';
 const liSpecialLink = document.createElement('a');
@@ -51,7 +48,7 @@ setAttributes(liSpecialLink, { data_image: SpecialMenu.getImage(), data_descript
 
 navMenu.appendChild(liSpecial);
 
-// contact tab
+
 const liContact = document.createElement('li');
 liContact.className = 'nav-item';
 const liContactLink = document.createElement('a');
@@ -63,7 +60,6 @@ setAttributes(liContactLink, { data_image: Contact.getImage(), data_description:
 
 navMenu.appendChild(liContact);
 
-// about tab
 const liAbout = document.createElement('li');
 liAbout.className = 'nav-item';
 const liAboutLink = document.createElement('a');
