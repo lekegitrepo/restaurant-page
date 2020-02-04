@@ -26,7 +26,7 @@ container.appendChild(row);
 
 content.appendChild(container);
 
-const linkTags = (currElem) => {
+function linkTags(currElem) {
   const a = document.querySelectorAll('.navbar a');
   [...a].map(el => { if (el.hasAttribute('style')) { el.setAttribute('style', ''); } });
   currElem.setAttribute('style', 'border-bottom: 2px solid #c73232; background-color: #343a40 !important; border-radius: 20% 0px 0px;');
@@ -40,11 +40,13 @@ navMenu.addEventListener('click', (e) => {
 });
 
 const brand = document.getElementById('brand');
-brand.onload = load();
-brand.addEventListener('click', load);
 
 function load() {
   descrip.innerHTML = brand.getAttribute('data_description');
   contenImg.src = brand.getAttribute('data_image');
   linkTags(brand);
 }
+
+brand.onload = load();
+brand.addEventListener('click', load);
+
