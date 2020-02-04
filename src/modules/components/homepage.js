@@ -8,7 +8,7 @@ const HomePage = (() => {
     <p class='quote text-center'>“Listen to the people who love you. Believe that they are worth living for even when you don't believe it. Seek out the memories depression takes away and project them into the future. Be brave; be strong; take your pills. Exercise because it's good for you even if every step weighs a thousand pounds. Eat when food itself disgusts you. Reason with yourself when you have lost your reason.”
 <br><span><b>― Andrew Solomon</b></span></p>`;
 
-  const getImage = () => return image.toString();
+  const getImage = () => image.toString();
 
   return { getName, getDescription, getImage };
 })();
