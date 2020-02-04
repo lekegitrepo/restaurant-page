@@ -44,7 +44,7 @@ liSpecialLink.className = 'nav-link';
 liSpecialLink.textContent = SpecialMenu.getName();
 liSpecial.appendChild(liSpecialLink);
 
-setAttributes(liSpecialLink, 
+setAttributes(liSpecialLink,
   { data_image: SpecialMenu.getImage(), data_description: SpecialMenu.getDescription() });
 
 navMenu.appendChild(liSpecial);
@@ -57,7 +57,7 @@ liContactLink.className = 'nav-link';
 liContactLink.textContent = Contact.getName();
 liContact.appendChild(liContactLink);
 
-setAttributes(liContactLink, 
+setAttributes(liContactLink,
   { data_image: Contact.getImage(), data_description: Contact.getDescription() });
 
 navMenu.appendChild(liContact);
