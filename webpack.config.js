@@ -42,10 +42,10 @@ module.exports = {
           },
           {
             loader: 'postcss-loader',
-             options: {
-              plugins: function () {
+            options: {
+              plugins() {
                 return [
-                  require('autoprefixer')
+                  'autoprefixer',
                 ];
               },
             },
