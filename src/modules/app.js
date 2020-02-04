@@ -57,7 +57,7 @@ li_contact_a.className = 'nav-link';
 li_contact_a.textContent = Contact.getName();
 li_contact.appendChild(li_contact_a);
 
-setAttributes(li_contact_a, {data_image: Contact.getImage(), data_description: 'This is our contact'});
+setAttributes(li_contact_a, {data_image: Contact.getImage(), data_description: Contact.getDescription()});
 
 nav_menu.appendChild(li_contact);
 
