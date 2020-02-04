@@ -1,8 +1,7 @@
 import image from '../../../images/image-4.png';
+
 const SpecialMenu = (() => {
-  const getName = () => {
-    return 'Special menu';
-  }
+  const getName = () => { return 'Special menu'; }
 
   const getDescription = () => {
     return `<h4>This is one of our popular and best dishes</h4>`;

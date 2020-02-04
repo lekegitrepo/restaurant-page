@@ -1,8 +1,7 @@
 import image from '../../../images/image-7.png';
+
 const Contact = (() => {
-  const getName = () => {
-    return 'Contact';
-  }
+  const getName = () => { return 'Contact'; }
 
   const getDescription = () => {
     return `<div class="form_main">
