@@ -14,6 +14,6 @@
     "no-param-reassign": "off",
     "eol-last": "off",
     "arrow-parens": "off",
-    "no-useless-return": "off"
+    "array-callback-return": "off"
   }
 }
