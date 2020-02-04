@@ -33,7 +33,9 @@ function linkTags(currElem) {
     }
     return '';
   });
-  currElem.setAttribute('style', 'border-bottom: 2px solid #c73232; background-color: #343a40 !important; border-radius: 20% 0px 0px;');
+  currElem.setAttribute('style', `border-bottom: 2px solid #c73232;
+                        background-color: #343a40 !important;
+                        border-radius: 20% 0px 0px;`);
 }
 
 navMenu.addEventListener('click', (e) => {
