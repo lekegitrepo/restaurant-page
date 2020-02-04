@@ -4,7 +4,7 @@ const Menu = (() => {
   const getName = () => 'Menu';
 
   const getDescription = () => {
-    return `<h4>Lists of available foods</h4>`;
+    return '<h4>Lists of available foods</h4>';
   }
 
   const getImage = () => {
@@ -14,4 +14,4 @@ const Menu = (() => {
   return {getName, getDescription, getImage}
 })();
 
-export {Menu};
+export { Menu };

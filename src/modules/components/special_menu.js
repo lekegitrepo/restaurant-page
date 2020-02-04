@@ -4,7 +4,7 @@ const SpecialMenu = (() => {
   const getName = () => 'Special menu';
 
   const getDescription = () => {
-    return `<h4>This is one of our popular and best dishes</h4>`;
+    return '<h4>This is one of our popular and best dishes</h4>';
   }
 
   const getImage = () => {
