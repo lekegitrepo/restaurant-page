@@ -26,13 +26,15 @@ container.appendChild(row);
 content.appendChild(container);
 
 function linkTags(currElem) {
+  const attr = null;
   const a = document.querySelectorAll('.navbar a');
-  [...a].map(function(el) {
-    if (el.hasAttribute('style')) {
-      el.setAttribute('style', '');
-    }
+  attr = [...a].map((el) => { 
+    if (el.hasAttribute('style')) { 
+      el.setAttribute('style', ''); 
+    } 
   });
   currElem.setAttribute('style', 'border-bottom: 2px solid #c73232; background-color: #343a40 !important; border-radius: 20% 0px 0px;');
+  return attr;
 }
 
 navMenu.addEventListener('click', (e) => {
