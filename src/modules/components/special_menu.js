@@ -11,7 +11,7 @@ const SpecialMenu = (() => {
     return image.toString();
   };
 
-  return { getName, getDescription, getImage }
+  return { getName, getDescription, getImage };
 })();
 
 export { SpecialMenu };
