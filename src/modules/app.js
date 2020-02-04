@@ -30,7 +30,7 @@ nav_menu.setAttribute('id', 'nav_menu');
 const li_menu = document.createElement('li');
 li_menu.className = 'nav-item';
 const li_menu_a = document.createElement('a');
-setAttributes(li_menu_a, {data_image: Menu.getImage(), data_description: 'This is a good menu'});
+setAttributes(li_menu_a, {data_image: Menu.getImage(), data_description: Menu.getDescription()});
 li_menu_a.className = 'nav-link';
 li_menu_a.textContent = Menu.getName();
 li_menu.appendChild(li_menu_a);
@@ -45,7 +45,7 @@ li_special_a.className = 'nav-link';
 li_special_a.textContent = SpecialMenu.getName();
 li_special.appendChild(li_special_a);
 
-setAttributes(li_special_a, {data_image: SpecialMenu.getImage(), data_description: 'This is a good menu'});
+setAttributes(li_special_a, {data_image: SpecialMenu.getImage(), data_description: SpecialMenu.getDescription()});
 
 nav_menu.appendChild(li_special);
 
@@ -70,7 +70,7 @@ li_about_a.textContent = About.getName();
 li_about.appendChild(li_about_a);
 
 setAttributes(li_about_a, {data_image: About.getImage(),
-              data_description: 'This is about how we start cooking good food'});
+              data_description: About.getDescription()});
 
 nav_menu.appendChild(li_about);
 

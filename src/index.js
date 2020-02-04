@@ -37,7 +37,7 @@ const linkTags = (currElem) => {
 nav_menu.addEventListener('click', (e) => {
   const elem = e.target
   console.log(elem.getAttribute('data_description'))
-  descrip.textContent = elem.getAttribute('data_description')
+  descrip.innerHTML = elem.getAttribute('data_description')
   conten_img.src = elem.getAttribute('data_image')
   linkTags(elem)
 });

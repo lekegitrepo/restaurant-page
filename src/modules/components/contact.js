@@ -1,4 +1,4 @@
-import image from '../../../images/image-4.png';
+import image from '../../../images/image-7.png';
 const Contact = (() => {
   const getName = () => {
     return 'Contact';

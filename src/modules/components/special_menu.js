@@ -1,11 +1,11 @@
-import image from '../../../images/image-1.png';
+import image from '../../../images/image-4.png';
 const SpecialMenu = (() => {
   const getName = () => {
     return 'Special menu';
   }
 
   const getDescription = () => {
-    return 'Lists of available foods';
+    return `<h4>This is one of our popular and best dishes</h4>`;
   }
 
   const getImage = () => {
