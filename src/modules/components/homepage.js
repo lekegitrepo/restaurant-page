@@ -1,7 +1,7 @@
 import image from '../../../images/image-6.png';
 
 const HomePage = (() => {
-  const getName = () => { return "Noodle's Palace"; }
+  const getName = () => "Noodle's Palace";
 
   const getDescription = () => {
     return `<h4 class='title'>This is Noodle Palace</h4>

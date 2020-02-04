@@ -1,7 +1,7 @@
 import image from '../../../images/image-7.png';
 
 const Contact = (() => {
-  const getName = () => { return 'Contact'; }
+  const getName = () => 'Contact';
 
   const getDescription = () => {
     return `<div class="form_main">
@@ -23,7 +23,7 @@ const Contact = (() => {
     return image.toString();
   }
 
-  return {getName, getDescription, getImage}
+  return { getName, getDescription, getImage }
 })();
 
 export {Contact};

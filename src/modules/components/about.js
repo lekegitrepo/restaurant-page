@@ -11,4 +11,4 @@ const About = (() => {
   return { getName, getDescription, getImage };
 })();
 
-export default { About };
+export { About };

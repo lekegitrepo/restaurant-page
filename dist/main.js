@@ -209,11 +209,11 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) *
 /*!*****************************************!*\
   !*** ./src/modules/components/about.js ***!
   \*****************************************/
-/*! exports provided: default */
+/*! exports provided: About */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _images_image_8_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/image-8.png */ \"./images/image-8.png\");\n\n\nvar About = function () {\n  var getName = function getName() {\n    return 'About';\n  };\n\n  var getDescription = function getDescription() {\n    return \"<h4>Noodle's Palace</h4>\\n    <p>We have been feeding the appetite of the world for over a century now</p>\";\n  };\n\n  var getImage = function getImage() {\n    return _images_image_8_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"].toString();\n  };\n\n  return {\n    getName: getName,\n    getDescription: getDescription,\n    getImage: getImage\n  };\n}();\n\n/* harmony default export */ __webpack_exports__[\"default\"] = ({\n  About: About\n});\n\n//# sourceURL=webpack:///./src/modules/components/about.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, \"About\", function() { return About; });\n/* harmony import */ var _images_image_8_png__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../../../images/image-8.png */ \"./images/image-8.png\");\n\n\nvar About = function () {\n  var getName = function getName() {\n    return 'About';\n  };\n\n  var getDescription = function getDescription() {\n    return \"<h4>Noodle's Palace</h4>\\n    <p>We have been feeding the appetite of the world for over a century now</p>\";\n  };\n\n  var getImage = function getImage() {\n    return _images_image_8_png__WEBPACK_IMPORTED_MODULE_0__[\"default\"].toString();\n  };\n\n  return {\n    getName: getName,\n    getDescription: getDescription,\n    getImage: getImage\n  };\n}();\n\n\n\n//# sourceURL=webpack:///./src/modules/components/about.js?");
 
 /***/ }),
 
