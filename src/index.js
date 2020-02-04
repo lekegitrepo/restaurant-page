@@ -27,7 +27,7 @@ content.appendChild(container);
 
 function linkTags(currElem) {
   const a = document.querySelectorAll('.navbar a');
-  [...a].map((el) => {
+  [...a].map(function(el) {
     if (el.hasAttribute('style')) {
       el.setAttribute('style', '');
     }
