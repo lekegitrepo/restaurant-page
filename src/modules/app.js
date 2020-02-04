@@ -1,4 +1,4 @@
-import image from '../../images/image-6.png';
+import {HomePage} from './components/homepage.js';
 import {Menu} from './components/menu.js';
 import {SpecialMenu} from './components/special_menu.js';
 import {Contact} from './components/contact.js';
@@ -17,8 +17,8 @@ function setAttributes(el, attrs) {
 //brand
 const brand = document.createElement('a');
 brand.className = 'navbar-brand';
-brand.textContent = "Noodle's Palace";
-setAttributes(brand, { id: 'brand',  data_image: image.toString(),
+brand.textContent = HomePage.getName();
+setAttributes(brand, { id: 'brand',  data_image: HomePage.getImage(),
               data_description: 'This is a good restaurant'});
 navbar.appendChild(brand);
 
